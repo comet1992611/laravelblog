@@ -45,7 +45,7 @@ class BlogEtcServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/Views/blogetc'             => base_path('resources/views/vendor/blogetc'),
             __DIR__.'/Config/blogetc.php'        => config_path('blogetc.php'),
-            __DIR__.'/css/blogetc_admin_css.css' => public_path('blogetc_admin_css.css'),
+            __DIR__ . '/css/blogetc_admin_css.css' => public_path('blogetc_admin_css.css'),
         ]);
     }
 

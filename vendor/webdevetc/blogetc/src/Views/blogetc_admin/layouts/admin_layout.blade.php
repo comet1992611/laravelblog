@@ -7,7 +7,7 @@
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>BlogEtcPost Blog Admin - {{ config('app.name') }}</title>
+    <title>Blog Admin - {{ config('app.name') }}</title>
 
     <script
             src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -30,13 +30,15 @@
         {{--<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">--}}
         {{--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">--}}
     @endif
+
+    <script src="{{ asset('js/app.js') }}" defer></script>
 </head>
 <body>
 <div id="app">
     <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
         <div class="container">
             <a class="navbar-brand" href="{{ url('/') }}">
-                {{ config('app.name', 'Laravel') }} WebDevEtc Blog Admin
+                {{ config('app.name', 'Laravel') }} Blog Admin
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -112,7 +114,7 @@
 </div>
 
 <div class="text-center mt-5 pt-5 mb-3 text-muted">
-    <small><a href="https://webdevetc.com/">Laravel Blog Package provided by Webdevetc</a></small>
+    <small><a href="https://freeroom.us/">Copyright @ 2020 FREEROOM, All rights reserved.</a></small>
 </div>
 
 

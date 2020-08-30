@@ -1,4 +1,4 @@
-<h2><a href="https://webdevetc.com/">WebDevEtc.com BlogEtc Admin Panel</a></h2>
+<h2><a href="https://freeroom.us/">Freeroom.us Blog Admin Panel</a></h2>
 <p>Welcome to the admin panel for your blog posts.</p>
 
 <ul class="list-group mb-3">

@@ -26,10 +26,9 @@ class AuthServiceProvider extends ServiceProvider
         $this->registerPolicies();
 
         //
-	Gate::define(\WebDevEtc\BlogEtc\Gates\GateTypes::MANAGE_BLOG_ADMIN, function($user){
-	    return true;
-	});
+        Gate::define(\WebDevEtc\BlogEtc\Gates\GateTypes::MANAGE_BLOG_ADMIN, function ($user) {
+            return true;
+        });
     }
 
-    
 }
