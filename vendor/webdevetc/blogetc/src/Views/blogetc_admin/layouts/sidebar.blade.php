@@ -4,7 +4,7 @@
 <ul class="list-group mb-3">
     <li class="list-group-item justify-content-between lh-condensed">
         <div>
-            <h6 class="my-0"><a href="{{ route("blogetc.admin.index") }}">BlogEtc Admin Home</a>
+            <h6 class="my-0"><a href="{{ route("blogetc.admin.index") }}">Blog Admin Home</a>
                 <span class="text-muted">(<?php
                     use WebDevEtc\BlogEtc\Models\Category;
                     use WebDevEtc\BlogEtc\Models\Comment;
