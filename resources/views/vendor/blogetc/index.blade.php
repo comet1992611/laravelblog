@@ -1,9 +1,37 @@
 @extends("layouts.app",['title'=>$title])
 @section("content")
+    <div class="banner-wrap">
+        <div class="wsite-elements wsite-not-footer wsite-header-elements">
+            <div class="wsite-section-wrap">
+                <div class="wsite-section wsite-header-section wsite-section-bg-color"
+                     style="height: auto;background-color: #181818;">
+                    <div class="wsite-section-content">
+
+                        <div class="container">
+                            <div class="banner">
+                                <div class="wsite-section-elements">
+                                    <h2 class="wsite-content-title">BLOG</h2>
+
+                                    <div style="text-align:inherit;">
+                                        <div style="height: 10px; overflow: hidden;"></div>
+                                        <a class="wsite-button wsite-button-small wsite-button-normal"
+                                           href="http://freeroom.us/">
+                                            <span class="wsite-button-inner">Create A rooom</span>
+                                        </a>
+                                        <div style="height: 10px; overflow: hidden;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="row">
         <div class="col-sm-12 blogetc_container">
             @can(\WebDevEtc\BlogEtc\Gates\GateTypes::MANAGE_BLOG_ADMIN)
-                <div class="text-center">
+                <div class="alert alert-success text-center col-sm-6" style="margin: auto; margin-top: 10px">
                     <p class="mb-1">
                         You are logged in as a blog admin user.
                         <br>
