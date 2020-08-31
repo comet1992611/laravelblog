@@ -32,6 +32,11 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     @endif
 
+    <script type="text/javascript">
+        function expendNavs() {
+            $('#navbarSupportedContent').toggleClass("collapse");
+        }
+    </script>
 </head>
 <body>
 <div id="app">
@@ -43,7 +48,7 @@
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="{{ __('Toggle navigation') }}">
+                    aria-label="{{ __('Toggle navigation') }}" onclick="expendNavs()">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
