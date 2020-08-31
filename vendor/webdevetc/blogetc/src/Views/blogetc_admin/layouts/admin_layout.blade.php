@@ -8,6 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>Blog Admin - {{ config('app.name') }}</title>
+    <link rel="icon" href="{{ asset('/favicon.ico') }}" type="image/x-icon"/>
 
     <script
             src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -37,7 +38,8 @@
     <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
         <div class="container">
             <a class="navbar-brand" href="{{ url('/') }}">
-                {{ config('app.name', 'Laravel') }} Blog Admin
+                {{--{{ config('app.name', 'Laravel') }} Blog Admin--}}
+                <img src="{{asset('/favicon.ico')}}" width="100px" height="100px">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false"

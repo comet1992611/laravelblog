@@ -28,7 +28,12 @@
             @forelse($posts as $post)
                 @include("blogetc::partials.index_loop")
             @empty
-                <div class="alert alert-danger">No posts</div>
+                <div class="col-sm-12">
+                    <div class="alert alert-danger col-sm-6 text-center" style="margin: auto; padding: 50px">There is no
+                        Posts!
+                    </div>
+                </div>
+
             @endforelse
 
             <div class="text-center col-sm-4 mx-auto">
